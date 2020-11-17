@@ -1,5 +1,6 @@
 const inquirer= require('inquirer');
 const fs= require('fs');
+const md= require('./mdText');
 
 inquirer.prompt([
     {
@@ -29,12 +30,27 @@ inquirer.prompt([
     },
     {
         type: "list",
-        name: "test",
-        message: "Enter information on how to test your project:",
+        name: "license",
+        message: "Choose a license for your project:",
         choices: ["Apache", "Boost", "MIT", "GNU GPLv3"]
     },
+    {
+        type: "input",
+        name: "test",
+        message: "Enter information on how to test your project:",
+    },
+    {
+        type: "input",
+        name: "github",
+        message: "Enter your github username:"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Enter your email address:"
+    },
 ]).then(answers => {
-    fs.writeFile(`README.md`, goWrite(), (err) => 
-    err ? console.error(err) : console.log(`success`)
+    fs.writeFile(`README.md`, md.generate(answers), (err) => 
+    err ? console.error(err) : console.log(`readMe was created succesfully!`)
     );
 })
