@@ -16,22 +16,38 @@ function generate(input) {
     return ` # ${input.title}
     
 ## Table of Contents
-- Description(#Description)
-- License
-- Installation
-- Usage
-- Testing
-- Contributing
-- Questions
+- [License](#License)
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Testing](#Testing)
+- [Contributing](#Contributing)
+- [Questions](#Questions)
     
+## License
+> ${choice} - this project is protected through the ${input.license} license
+
 ## Description
 > ${input.desc}
 
-## License
-> ${choice} - this project is protected by the ${input.license} license
-
 ## Installation
 > ${input.install}
+
+## Usage
+> ${input.usage}
+
+## Testing
+> ${input.test}
+
+## Contributions
+> ${input.contribute}
+
+## Questions
+To reach me with additional questions:
+>
+> Find me on [GitHub](https://github.com/${input.github})
+>
+> Send me an [Email](mailto:${input.email})
 
 `
 }
