@@ -13,7 +13,7 @@
 > [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) - this project is protected through the GNU GPLv3 license
 
 ## Description
-> This project is used to efficiently create strong ReadMe files. The program asks a series of questions, and user input fills in the different sections of the ReadMe file
+> This project is used to efficiently create strong ReadMe files. The program asks a series of questions, and user input fills in the different sections of the ReadMe file. The program uses the inquirer node package to prompt the user to return key information needed to build a readme. Once collected, the fs package is used to write a readMe file to the current directory, and calls up the generate() function imported from the mdText file to create a readMe that includes the user's data. 
 
 ## Installation
 > Clone the repo to your machine to install all necessary files to run (git clone)
