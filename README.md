@@ -8,6 +8,7 @@
 - [Testing](#Testing)
 - [Contributing](#Contributing)
 - [Questions](#Questions)
+- [Walkthrough Video](./Utils/WalkthroughVideo/WalkthroughVideo.mp4)
     
 ## License
 > [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) - this project is protected through the GNU GPLv3 license
